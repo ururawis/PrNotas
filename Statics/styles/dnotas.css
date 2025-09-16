@@ -1,0 +1,109 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fdf4e3;
+    justify-content: center;
+    align-items: center;
+    
+}
+/*LOS COLORES DE LAS PALETAS */
+:root{
+    --oldLace: #fdf4e3;
+    --azulOscuro: #134686;
+    --rojoBrillante: #ed3f27;
+    --amarilloMostaza: #feb21a;
+    --moradoBonito: #a65d9a;
+}
+/*Clases/estilos de los contenedores*/
+.contenedorMayor{
+    display: flex;
+    width: 95%;
+    height: 95vh;
+    background-color: none;
+    justify-self: center;
+    align-self: center;
+    flex-wrap: flex;
+    justify-content: space-between;
+}
+/*BARRA DE MAT*/
+.barraMaterias{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: var(--azulOscuro);
+    justify-items: center;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: scroll;
+}
+.btnMaterias{
+    display: flex;
+    width: 85%;
+    height: 50px;
+    background-color: #a1a9b7;
+    border-radius: 30px;
+    border-style: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.formatBtnMaterias{
+    display: flex;
+    width: 85%;
+    height: 50px;
+    background-color: oldlace;
+    border-radius: 30px;
+    border-style: none;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+/*NOtas*/
+.grandeNotas{
+    display: flex;
+    width: 78%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: var(--amarilloMostaza);
+    justify-items: center;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+.barraDeApuntes{
+    display: flex;
+    width: 92%;
+    height: 60px;
+    background-color: none;
+
+}
+.contenidoDeApuntes{
+    display: flex;
+    width: 92%;
+    height: 76%;
+    background-color: oldlace;
+    border-radius: 0px 0px 30px 30px;
+}
+.crearApunte{
+    display: flex;
+    width: 150px;
+    height: 100%;
+    background-color: #003f94;
+    border-style: none;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
