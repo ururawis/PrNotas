@@ -1,20 +1,14 @@
 const barraMaterias = document.querySelector(".barraMaterias");
-const nombresMaterias = minibasJSON.materias;
 
-
-nombresMaterias.forEach(materias=>{
-    
+function generarMaterias(){
+    let nombre = prompt("Inserta el nombre de la materia: ");
+    if(nombre == ""){
+        alert("No se puede generar una materia sin nombre.");
+        return false;
+    }
     const botonMaterias =  document.createElement("button");
-    botonMaterias.textContent = materias.nombre;
+    botonMaterias.textContent = nombre;
     botonMaterias.className = "formatBtnMaterias";
 
     barraMaterias.appendChild(botonMaterias);
-
-    botonMaterias.addEventListener("click", () =>{
-        console.log(`Hola ${materias.nombre}`);
-    })
-})
-
-function comprobar(){
-    console.log("HOla Crear");
 }
