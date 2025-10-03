@@ -35,16 +35,17 @@ body {
 /*BARRA DE MAT*/
 .barraMaterias{
     display: flex;
+    flex-direction: column;
     width: 20%;
-    height: 100%;
+    height: 92%;
     border-radius: 30px;
     background-color: var(--azulOscuro);
-    justify-items: center;
-    flex-direction:column ;
-    justify-content: center;
     align-items: center;
     gap: 10px;
-    overflow: scroll;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-y: auto;
+    justify-content: flex-start;
 }
 .btnMaterias{
     display: flex;
@@ -56,6 +57,7 @@ body {
     color: white;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 .formatBtnMaterias{
     display: flex;
@@ -68,6 +70,8 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
+    font-size: medium;
+    flex-shrink: 0;
 }
 /*NOtas*/
 .grandeNotas{
@@ -87,7 +91,7 @@ body {
     width: 92%;
     height: 60px;
     background-color: none;
-
+    overflow-x: auto;
 }
 .contenidoDeApuntes{
     display: flex;
@@ -106,4 +110,16 @@ body {
     color: white;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
+}
+.contenidoDerecho{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    color: none;
 }
